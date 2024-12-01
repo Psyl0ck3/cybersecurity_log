@@ -17,3 +17,12 @@ CREATE TABLE activity_logs (
 	username VARCHAR(255),
 	date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
+
+CREATE TABLE user_accounts (
+    user_id AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    first_name VARCHAR(255) ,
+    last_name VARCHAR(255), 
+    password text , 
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+)
